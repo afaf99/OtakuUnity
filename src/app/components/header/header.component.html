@@ -1,0 +1,10 @@
+<div class="header">
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]="['/home']">Otaku Unity</a>
+      <ul>
+        <li class="navbar-brand"> <a *ngIf="authService.isAuthenticated()" (click) = "logout()">logout</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>

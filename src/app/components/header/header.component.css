@@ -1,0 +1,46 @@
+
+.header{
+    background-color: #362B31;
+    height: 90px;
+}
+.header:hover{
+    background-color: #D7B4B5;
+
+}
+
+.navbar-brand{
+  margin-top: -10px !important;
+}
+  
+  li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  a {
+    color: #d7d4dd;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  .navbar{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;  
+  }
+
+  .navbar-brand{
+    font-family: "Luckiest Guy"; 
+    font-size:2rem;
+    color: #fff; 
+   cursor: pointer;
+   text-shadow: 2px 2px 4px #000000;
+  }
+  .navbar-brand:hover{
+  
+    color: #fff; 
+    transition: 0.3s ease-in-out;
+ 
+  }

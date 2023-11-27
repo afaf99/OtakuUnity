@@ -1,0 +1,46 @@
+<div class="banner">
+    <div class="thick-arrow-down" (click)="scrollToTarget()"></div>
+</div>
+
+<div class="page-two">
+    <div class="image"><img src="../../../assets/1.png" alt="Image 1"></div>
+    <div class="image"><img src="../../../assets/2.png" alt="Image 2"></div>
+    <div class="image"><img src="../../../assets/3.png" alt="Image 3"></div>
+    <div class="image"><img src="../../../assets/4.png" alt="Image 4"></div>
+    <div class="image"><img src="../../../assets/5.png" alt="Image 5"></div>
+    <div class="image"><img src="../../../assets/6.png" alt="Image 6"></div>
+    <div class="image"><img src="../../../assets/7.png" alt="Image 7"></div>
+    <div class="image"><img src="../../../assets/8.png" alt="Image 8"></div>
+    <div class="image"><img src="../../../assets/9.png" alt="Image 9"></div>
+    <div class="image"><img src="../../../assets/10.png" alt="Image 10"></div>
+    <div class="image"><img src="../../../assets/11.png" alt="Image 11"></div>
+    <div class="image"><img src="../../../assets/12.png" alt="Image 12"></div>
+
+    <div id="cards" class="card-container">
+
+
+        <div class="card">
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+              <h1>Login</h1>
+                <fieldset class="form-group">
+                  <label>username:</label>
+                  <input type="text" class="form-control" name="username" formControlName="username" required>
+                </fieldset>
+              
+                <fieldset class="form-group">
+                  <label>password:</label>
+                  <input type="password" class="form-control" name="password" formControlName="password" required="required">
+                </fieldset>
+              
+                <button [disabled]="loginForm.invalid" type="submit" class="cssbuttons-io-button">Login
+                  <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </button>
+              </form>
+              
+        </div>
+    </div>
+</div>

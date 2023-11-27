@@ -1,0 +1,345 @@
+  .image-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .image {
+    width: calc(16.666% - 2px);
+    box-sizing: border-box;
+    height: 661px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .content-container {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #D7B4B5;
+    z-index: 1;
+  }
+  
+  .table-container {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    width: 100%;
+
+  }
+  
+  h1 {
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    color: #000;
+  }
+  
+  .table {
+    color: #000;
+    text-align: center;
+  }
+  
+  thead {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  tbody {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .row {
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+  
+  .header {
+    background-color: #419bb6;
+    height: 90px;
+  }
+  
+  .header:hover {
+    background-color: #5ab9ce;
+  }
+  
+  li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  a {
+    color: #d7d4dd;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  
+  .navbar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  
+  .navbar-brand {
+    font-family: "Luckiest Guy";
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .navbar-brand:hover {
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D7B4B5; 
+    padding: 0;
+    border-radius: 10px;
+  }
+  
+  .pagination {
+    margin: 0;
+    color: #000;
+  }
+  
+  .poster-img img{
+    width: 85px;
+    height: 150px;
+  }
+
+  td{
+    vertical-align: middle !important;
+  }
+  .row{
+    margin-top: 60px;
+  }
+  .edit-button {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5A74AF;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+  }
+  
+  .edit-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+  }
+  
+  .edit-svgIcon path {
+    fill: 000;
+  }
+  
+  .edit-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: #7CAABA;
+    align-items: center;
+  }
+  
+  .edit-button:hover .edit-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .edit-button::before {
+    display: none;
+    content: "Edit";
+    color: #000;
+    transition-duration: 0.3s;
+    font-size: 2px;
+  }
+  
+  .edit-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+  }
+  
+
+  .button-container{
+    padding-left: 20px;
+    padding-right: 40px;
+    max-width: 100px;
+
+  }
+
+  .delete-container{
+    padding-right: 0%;
+    max-width: 100px;
+
+
+  }
+
+  .button {
+    --main-focus: #2d8cf0;
+    --font-color: #dedede;
+    --bg-color-sub: #970C10;
+    --bg-color: #BA0F30;
+    --main-color: #dedede;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(33px);
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: var(--main-color);
+  }
+  
+  .button:hover {
+    background: var(--bg-color);
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+
+  .button-add {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #223C3F;
+  }
+  
+  .button-add, .button_add_icon, .button_add_text {
+    transition: all 0.3s;
+  }
+  
+  .button-add .button_add_text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: -0.08em;
+  }
+  
+  .button-add .button_add_icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #6FD3C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-add .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button-add:hover {
+    background: #3689AD;
+  }
+  
+  .button-add:hover .button_add_text {
+    color: transparent;
+  }
+  
+  .button-add:hover .button_add_icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button-add:active .button_add_icon {
+    background-color: #2e8644;
+  }
+  
+  .button-add:active {
+    border: 1px solid #2e8644;
+  }

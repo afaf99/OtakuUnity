@@ -1,0 +1,67 @@
+<app-header></app-header>
+
+<div class="image-container">
+  <div class="image"><img src="../../../assets/1.png" alt="Image 1"></div>
+  <div class="image"><img src="../../../assets/2.png" alt="Image 2"></div>
+  <div class="image"><img src="../../../assets/3.png" alt="Image 3"></div>
+  <div class="image"><img src="../../../assets/4.png" alt="Image 4"></div>
+  <div class="image"><img src="../../../assets/5.png" alt="Image 5"></div>
+  <div class="image"><img src="../../../assets/6.png" alt="Image 6"></div>
+  <div class="image"><img src="../../../assets/7.png" alt="Image 7"></div>
+  <div class="image"><img src="../../../assets/8.png" alt="Image 8"></div>
+  <div class="image"><img src="../../../assets/9.png" alt="Image 9"></div>
+  <div class="image"><img src="../../../assets/10.png" alt="Image 10"></div>
+  <div class="image"><img src="../../../assets/11.png" alt="Image 11"></div>
+  <div class="image"><img src="../../../assets/12.png" alt="Image 12"></div>
+
+  <div class="card-container">
+    <div class="card">
+      <form (ngSubmit)="saveAnime()">
+        <h1>Edit Anime</h1>
+
+        <fieldset class="form-group">
+          <label>Poster Url:</label>
+          <div class="poster-preview">
+            <input type="text" class="form-control" name="posterUrl" [(ngModel)]="posterUrl" required>
+          </div>
+        </fieldset>
+
+
+        <fieldset class="form-group">
+          <label>Title:</label>
+          <input type="text" class="form-control" name="title" [(ngModel)]="title" required>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label>Genre:</label>
+          <input type="text" class="form-control" name="genre" [(ngModel)]="genre" required="required">
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label>Duration:</label>
+          <input type="number" class="form-control" name="duration" [(ngModel)]="duration" required="required">
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label>Episode:</label>
+          <input type="number" class="form-control" name="episode" [(ngModel)]="episode" required="required">
+        </fieldset>
+
+
+        <button [disabled]="AnimeForm.invalid" type="submit">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path fill="currentColor"
+                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <span>Submit</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

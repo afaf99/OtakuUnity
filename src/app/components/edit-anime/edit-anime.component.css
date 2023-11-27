@@ -1,0 +1,150 @@
+.image-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container .image {
+    width: calc(16.666% - 2px); 
+    box-sizing: border-box;
+    height: 661px; 
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    
+}
+
+.image-container img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+  
+  .card-container {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .card {
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 230%; 
+    height: 15%;
+    padding: 110px 5px;
+    z-index: 1;
+    background: #362B31;
+    color: #fff;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-out;
+    background-color: #D7B4B5;
+    color: #000;
+  }
+  
+input{
+    width: 350px;
+    border-radius: 15px;
+}
+
+form h1 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+img {
+    width: 290px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.card-body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    background-color: #F48D68E8;
+    width: 20%;
+    height: 15%;
+    opacity: 0.7;
+
+}
+
+form h1 {
+    text-align: center;
+    padding-bottom: 25px;
+} 
+
+
+
+button {
+    margin-top: 15% !important;
+    margin-left: 100px;
+    font-family: inherit;
+    font-size: 20px;
+    background: #5A74AF;
+    color: #fff;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+ 
+  .ng-invalid:not(form){
+    border: 2px solid red;
+}
